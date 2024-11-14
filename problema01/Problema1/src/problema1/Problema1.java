@@ -38,32 +38,37 @@ public class Problema1 {
             switch (operador){
                 case "+":
                    operacion = (num1 + num2);
+                   System.out.printf("El resultado es: %.2f", operacion);
                    break;
                    
                 case "-":
                     operacion = (num1 - num2);
+                    System.out.printf("El resultado es: %.2f", operacion);
                     break;
                     
                 case "*":
                     operacion = (num1 * num2);
+                    System.out.printf("El resultado es: %.2f", operacion);
                     break;
                    
                 case "/":
                     operacion = (num1 / num2);
+                    System.out.printf("El resultado es: %.2f", operacion);
                     break;
                     
                 case "MOD":
                     operacion = (num1 % num2);
+                    System.out.printf("El resultado es: %.2f", operacion);
                     break;
                     
                 case "^":
                     operacion = (Math.pow (num1, num2));
+                    System.out.printf("El resultado es: %.2f", operacion);
                     break;
-                    
-                   
-                    
+                 
             }
-                
+            
+              
         }
     }
     
