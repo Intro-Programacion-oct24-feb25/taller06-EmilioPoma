@@ -24,11 +24,25 @@ public class Problema1 {
         
         System.out.println("Ingrese la primera cantidad");
         double num1 = entrada.nextDouble();
+        
         System.out.println ("Ingrese el operador");
         entrada.nextLine();
         String operador = entrada.nextLine();
+        
+        double operacion = 0;
+        
         System.out.println("Ingrese la segunda cantidad");
         double num2 = entrada.nextDouble();
+        
+        if (num1 > num2) {
+            switch (operador){
+                case "+":
+                   operacion = (num1 + num2); 
+                   
+                    
+            }
+                
+        }
     }
     
 }
