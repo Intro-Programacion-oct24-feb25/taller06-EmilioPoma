@@ -23,10 +23,10 @@ public class Problema3 {
         String nombre;
         String tipoE;
         double sueldo;
-        double incremento;
-        double sueldoFinal;
+        double adicional;
+        double sueldoFinal = 0;
         
-        System.out.println("Ingrese el nombre del empleado");
+        System.out.println("Ingrese el nombre del empleado:");
         nombre = entrada.nextLine();
         
         System.out.println("Ingrese el tipo de empleado:");
@@ -34,6 +34,53 @@ public class Problema3 {
         
         System.out.println("Ingrese el sueldo del empleado:");
         sueldo = entrada.nextDouble();
+        
+        switch (tipoE){
+            case "1":
+                adicional = 0.05;
+                sueldoFinal = sueldo - adicional;
+                System.out.printf("Informe\nNombre: %s\nTipo de Empleado: %s\n"
+                        + "Sueldo Inicial: %.2f\nIncremento: %.2f\n"
+                        + "Sueldo Final: %.2f\n", 
+                        nombre, tipoE, sueldo, adicional, sueldoFinal);
+                break;
+                
+            case "2":
+                adicional = 0.07;
+                sueldoFinal = sueldo - adicional;
+                System.out.printf("Informe\nNombre: %s\nTipo de Empleado: %s\n"
+                        + "Sueldo Inicial: %.2f\nIncremento: %.2f\n"
+                        + "Sueldo Final: %.2f\n", 
+                        nombre, tipoE, sueldo, adicional, sueldoFinal);
+                break;
+                
+            case "3":
+                adicional = 0.09;
+                sueldoFinal = sueldo - adicional;
+                System.out.printf("Informe\nNombre: %s\nTipo de Empleado: %s\n"
+                        + "Sueldo Inicial: %.2f\nIncremento: %.2f\n"
+                        + "Sueldo Final: %.2f\n", 
+                        nombre, tipoE, sueldo, adicional, sueldoFinal);
+                break;
+                
+            case "4":
+                adicional = 0.12;
+                sueldoFinal = sueldo - adicional;
+                System.out.printf("Informe\nNombre: %s\nTipo de Empleado: %s\n"
+                        + "Sueldo Inicial: %.2f\nIncremento: %.2f\n"
+                        + "Sueldo Final: %.2f\n", 
+                        nombre, tipoE, sueldo, adicional, sueldoFinal);
+                break;
+                
+            default:
+                adicional = 0.15;
+                sueldoFinal = sueldo - adicional;
+                System.out.printf("Informe\nNombre: %s\nTipo de Empleado: %s\n"
+                        + "Sueldo Inicial: %.2f\nIncremento: %.2f\n"
+                        + "Sueldo Final: %.2f\n", 
+                        nombre, tipoE, sueldo, adicional, sueldoFinal);
+                break;
+        }
         
         
         
