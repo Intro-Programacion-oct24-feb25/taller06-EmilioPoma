@@ -31,12 +31,13 @@ public class Problema2 {
         
         System.out.println("Ingrese el tipo del vehiculo");
         tipo = entrada.nextLine();
+        tipo = tipo.toLowerCase();
         
         System.out.println("Ingrese el valor del vehiculo:");
         valorC = entrada.nextInt();
         
         switch(tipo){
-            case "1":
+            case "tipo 1":
                 tipo = "vehiculo liviano particular";
                 peaje = (0.0001*valorC)+2;
                 System.out.printf("Peaje 'Buena via'\n\tPropietario: "
@@ -44,7 +45,7 @@ public class Problema2 {
                         propietario, tipo, valorC, peaje);
                 break;
                 
-            case "2":
+            case "tipo 2":
                 tipo = "vehiculo grande particular";
                 peaje = (0.0002*valorC)+2.5;
                 System.out.printf("Peaje 'Buena via'\n\tPropietario: "
@@ -52,7 +53,7 @@ public class Problema2 {
                         propietario, tipo, valorC, peaje);
                 break;
               
-            case "3":
+            case "tipo 3":
                 tipo = "taxi";
                 peaje = (0.0004*valorC)+1.5;
                 System.out.printf("Peaje 'Buena via'\n\tPropietario: "
@@ -60,7 +61,7 @@ public class Problema2 {
                         propietario, tipo, valorC, peaje);
                 break;
               
-             case "4":
+             case "tipo 4":
                 tipo = "bus urbano";
                 peaje = (0.0005*valorC)+2.2;
                 System.out.printf("Peaje 'Buena via'\n\tPropietario: "
